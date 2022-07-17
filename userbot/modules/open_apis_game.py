@@ -11,7 +11,7 @@ from userbot.cmdhelp import CmdHelp
 
 def download(url):
     response = requests.get(url)
-    file = open("./avatar.jpg", "wb")
+    file = open("./avatar.png", "wb")
     file.write(response.content)
     file.close()
     return True
